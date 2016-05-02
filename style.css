@@ -1,0 +1,85 @@
+/*body{
+	
+	background-image:url(images/young-game-match-kids.jpg);
+	width:10%;
+	margin: 5%%
+
+}*/
+
+/*main{
+	height: 75%
+}*/
+
+#mainHeader{
+	text-align: center;
+	display: block;
+	font-weight: 600;
+	color: orange;
+	font-family: Arial;
+	border: 2px;
+
+}
+
+.topSection{
+	background: gray;
+	border: 2px;
+	margin: 10px;
+	padding: 5px;
+
+}
+
+.childsName{
+	background: pink;
+	border: 2px;
+	float: left;
+	width: 25%;
+	margin: 10px;
+	padding: 5px;
+}
+
+.timeSection{
+	background: blue;
+	float: left;
+	width: 25%;
+	border: 2px;
+	margin:10px;
+	padding: 5px;
+}
+
+.activitySection{
+	background: purple;
+	border: 2px;
+	width: 25%;
+	float: left;
+	margin:10px;
+	padding: 5px;
+}
+
+.durationSection{
+	background: red;
+	float: left;
+	border: 2px;
+	width: 25%;
+	margin:10px;
+	padding: 5px;
+}
+
+.notesSection{
+	background: green;
+	border: 2px;
+	margin:10px;
+	padding: 5px;
+	float: right;
+	width:25%;
+}
+
+footer{
+	background: yellow;
+	border: 2px;
+	margin:20px;
+	padding: 5px;
+	width: 100%;
+	height: 25%
+
+}
+

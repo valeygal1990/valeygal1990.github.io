@@ -1,1 +1,118 @@
-<p> Hello world</p>
+	<!DOCTYPE html>
+
+	<html>
+
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="style.css">
+
+		</head>
+
+		<body>
+
+			<header>
+				<h1 id = "mainHeader">
+					My Day Today
+
+				</h1>
+			</header>
+			
+		<main>
+				<section class=" topSection row fluidSpanSection">
+				<form id = "caregiversName">
+					<label for = "caregiversName"> Caregiver Name</label>
+					<input type = "text" name = "caregiversName" value = "caregiversName">
+				</form>
+				
+				<form id = "todaysDate">
+					<label for = "todaysDate">Today's Date</label>
+					<input type = "date" name = "todaysDate" value = "todaysDate"> 
+				</h2>
+				</section>
+					
+				<section class = "childsName">
+				<form id = "childsName">
+					<label for = "childsName">Child's Name</label>
+					<input type = "Text" name = "childsName" value = "childsName">
+					<!-- <a href="#">Child's name</a>
+					Childs name section -->
+				</form>
+				</section>
+
+				<section class = "timeSection">	
+				<form id = "activityTime"> <!-- Start time and end time of the activity -->
+					<label for= "activityTime">Activity Time</label>
+					<input type = "time" "timeForm" "col-xs-12 col-md-8"> 
+				</form>
+				</section>
+
+
+				<section class = "activitySection">
+				<form id= "activity"> <!-- ask about how to consolidate this section -->
+					<label for = "activity">Select an Activity</label>
+					<input type = "text" name = "activity" value = "activity" "activitySection col-xs-12 col-md-8">
+					<select>
+						<option value = "Arrival"></option>
+						<option value = "Meal"></option>
+						<option value = "Nap"></option>
+						<option value = "Playdate"></option>
+						<option value = "Appointment"></option>
+						<option value = "Other"></option>
+					</select>
+				</form>
+				</section>
+
+				<section class = " durationSection"
+				<form id = "activityDuration"> <!-- Total time that the activity took -->
+					<label for = "activityDuration">Duration</label>
+					<input type = "time" name = "totalTime" value = "totalTime">
+				<!-- <section "durationSection col-xs-12 col-md-8">
+					DURATION section
+				</section> -->
+				</form>
+				</section>
+
+				<section class = "notesSection"
+				<form id = "notesForTheDay">
+					<label for = "notes">NOTES</label>
+					<input type = "text" name = "notes" value= "notes">
+				</form>
+				</section>
+
+
+
+		</main>
+
+		<footer>
+			<button id = "backButton"><</button>
+			<button id = "submitLog">Submit Log</button>
+			<button id = "nextButton">></button>
+		</footer>
+
+		</body>
+
+		<!-- put childs name into its own section
+		time should be in its own section
+		activity should be in its own section
+		these three sections should float side by side
+		notes for the day should be its own section on the bottom right of the page
+		there should be a border around each section
+		The sections for time, activity and duration are going to be tables
+ -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</html>
