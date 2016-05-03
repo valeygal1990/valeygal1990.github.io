@@ -1,3 +1,29 @@
+	<!-- 
+		Hi Valentine!  I added feedback to your final so far in HTML comments like this one.
+
+		This is a good start so far.  I would like to see the page a bit more fleshed out.
+		Also, I would encourage you to properly indent your HTML, so that child tags are indented inside 
+		their parent tags.  It makes the HTML a whole lot easier to read.  For example:
+
+		<html>
+			<head>
+				<link rel="stylesheet" href="style.css">
+			</head>
+
+			<body>
+				<header>
+					<h1>Hello!</h1>
+				</header>
+
+				<main>
+					<p>Something goes here.</p>
+				</main>
+			</body>
+		</html>
+
+		More comments below!
+	-->
+
 	<!DOCTYPE html>
 
 	<html>
@@ -11,6 +37,10 @@
 		<body>
 
 			<header>
+				<!-- 
+					You do not really need the spaces around the equal sign.  It should not hurt anything,
+					but usually there are no spaces.
+				-->
 				<h1 id = "mainHeader">
 					My Day Today
 
@@ -18,6 +48,37 @@
 			</header>
 			
 		<main>
+				<!--
+					I see that this <section> tag has  "row" class from Bootstrap.  Are you also planning to 
+					add col- classes to the forms inside the section?
+
+					Take a look at the "Grid Options" section here:
+					http://getbootstrap.com/css/
+
+					Also, I noticed that each form field/section is in its own <form> tag.  If this entire
+					page is one whole form, all of the fields should be inside a single <form> tag.  The form
+					can contain <section> tags inside of it - for example to visually separate the different
+					parts of the form - but all of these fields, including the submit button, needs to be in a single
+					<form> tag.  For example:
+
+					<form id="myForm">
+						<section id="caregiversName">
+							<label for="caregiversName"> Caregiver Name</label>
+							<input type="text" name="caregiversName" value="caregiversName">
+						</section>
+
+						<section id="childsName">
+							<label for="childsName">Child's Name</label>
+							<input type="Text" name="childsName" value="childsName">
+						</section>
+
+						<section id="actions">
+							<button id="backButton"><</button>
+							<button id="submitLog">Submit Log</button>
+							<button id="nextButton">></button>
+						</section>
+					</form>
+				-->
 				<section class=" topSection row fluidSpanSection">
 				<form id = "caregiversName">
 					<label for = "caregiversName"> Caregiver Name</label>
@@ -27,6 +88,9 @@
 				<form id = "todaysDate">
 					<label for = "todaysDate">Today's Date</label>
 					<input type = "date" name = "todaysDate" value = "todaysDate"> 
+				<!--
+					I'm sure this is a typo, but this end </h2> tag should be an end </form> tag.
+				-->
 				</h2>
 				</section>
 					
@@ -51,6 +115,14 @@
 				<form id= "activity"> <!-- ask about how to consolidate this section -->
 					<label for = "activity">Select an Activity</label>
 					<input type = "text" name = "activity" value = "activity" "activitySection col-xs-12 col-md-8">
+					<!--
+						Make sure to give this <select> form field a name (just like you do with <input>).
+
+						Also, there needs to be text between the start <option> tag and the end <option> tag.  This 
+						text is what appears in the drop down menu itself.  For example:
+
+						<option value="Arrival">Arrival</option>
+					-->
 					<select>
 						<option value = "Arrival"></option>
 						<option value = "Meal"></option>
@@ -62,7 +134,11 @@
 				</form>
 				</section>
 
-				<section class = " durationSection"
+				<!--
+					I'm sure this is a typo, but your <section> tag is missing the end pointy bracket; 
+					I added it in here.
+				-->
+				<section class = " durationSection">
 				<form id = "activityDuration"> <!-- Total time that the activity took -->
 					<label for = "activityDuration">Duration</label>
 					<input type = "time" name = "totalTime" value = "totalTime">
