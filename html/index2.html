@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><!--bootstrap link-->
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Google fonts link Josefin Sans-->
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	</head>
+
+		<body>
+			<!--This is my first row-->
+			<header class="headerRow row">
+				<img class="logo" src="../images/LogoScopic.jpg" alt="kinderLogo" height="200" width="200">
+				<div class="page-header">
+			  		<h1>The easy way <small>to log their day!</small></h1>
+				</div>
+			</header>
+
+			<!--This is my second row-->
+			
+			<form id="mainForms">
+			<!--This is my first form-->
+			<div class="container col-md-offset-4 row">
+				<section id = "todaysDate">
+				<div class="todaysDate">
+					<label for = "todaysDate">Today's Date</label>
+					<input type = "date" name = "todaysDate" value = "todaysDate">
+				</div><!--.todaysDate-->
+			</div><!--.container-->
+
+			<!--This is my second form-->
+			<div class="container col-md-offset-4 row">
+				<section id="caregiverForm">
+				<div class="caregiversName">
+					<label for="caregiversName">
+						Please enter your name
+					</label>
+				</div>
+
+				<div class="inputBox">
+					<input type="text" name="caregiversName" value="Caregiver's Name">
+				</div><!--.inputBox-->
+				</section><!--caregiversName-->
+			</div><!--.container-->
+
+			<!--This is my third form-->
+			<div class="container col-md-offset-4 row">
+				<section id="childsNameForm">
+				<div class="childsName">
+					<label for = "childsName"> 
+						Please enter the child's name
+					</label>
+				</div>
+					<input type = "text" name="childsName" value="Child's Name">
+
+				</section><!--childsName-->
+			</div><!--container-->
+
+			<!--This is my forth form-->
+			<div class="container col-md-offset-4 row">
+				<!-- <section class ="activitySection"> -->
+				<section id= "activity">
+				<div class="activity">	
+					<label for ="activity">Select an Activity</label>
+				</div><!--activity-->
+				<input type ="text" name ="activity" value ="activity"> 
+					
+			
+					<select type= "select" name= "select" value= "select">
+						<option value = "Arrival">Arrival</option>
+						<option value = "Meal">Meal</option>
+						<option value = "Nap">Nap</option>
+						<option value = "Playdate">Playdate</option>
+						<option value = "Appointment">Appointment</option>
+						<option value = "Other">Other</option>
+					</select>
+				</section><!--activity-->
+
+			</div><!--container-->
+			<!--these forms should work together-->
+
+			<!--This is my fifth  form-->
+			<div class="container col-md-offset-4">
+				<section class="durationSection">
+				<section id="activityDuration"> <!-- Total time that the activity took -->
+				<div class="activityDuration">
+					<label for="activityDuration">Duration</label>
+				</div>
+					<time datetime="PTDHMS" name="totalTime" value="totalTime">
+				</section>
+				</section>
+			</div>
+
+			<!--This is my sixth form-->
+			<section class = "container col-md-offset-4 row">
+				<section id = "notesForTheDay">
+				<div class="notesForTheDay">
+					<label for = "notes">NOTES</label>
+				</div><!--notesForTheDay-->
+				<input type = "text" name = "notes" value= "notes">
+
+					
+				</section><!--notesForTheDay-->
+				</section><!--container-->
+
+			</form>
+
+			<!--These are my back and next buttons--> 
+					<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				  	<div class="btn-group" role="group">
+					  	<!-- <span class="glyphicon triangle-right" aria-hidden="true"></span> --><!--the icon did not work-->
+					    <button type="button" class="btn btn-default">Back</button>
+				  	</div>
+					  <!-- <div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default">Middle</button>
+					  </div> -->
+				  	<div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default">Next</button>
+
+				  	</div><!--.btn-group-->
+					</div><!--.btn-group btn-group-justified-->
+
+
+			<script src='https://code.jquery.com/jquery-2.2.3.min.js'></script> 
+
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			<script src="../js/index.js"></script>
+
+		</body>
+</html>

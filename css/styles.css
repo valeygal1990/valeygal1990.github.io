@@ -1,0 +1,87 @@
+h1{
+	font-family: Josefin Sans;
+	font-weight: 900;
+	text-align: center;
+	color: #4F184E;
+
+}
+
+.homeParagraph{
+	font-family: Josefin Sans;
+	font-weight: 300;
+	text-align: center;
+}
+
+.getStartedParagraph{
+	font-family: Josefin Sans;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+}
+
+.getStartedParagraph a{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+}
+
+.page-header{
+	text-align: center;
+	color: purple;
+	font-family: Josefin Sans;
+	background:#ECDFED;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+#caregiverForm, #childsNameForm, #todaysDate, #activity, #notesForTheDay, #activityDuration{
+	background-color:#986D9C; 
+	width: 40%;
+	border-width:5px;	
+	border-style:hidden;
+	border-radius: 25px;
+	padding:80px;
+	margin:10px;
+}
+
+input[type=text]{ 
+	background-color: #F5B8F4;
+    color: black;
+    padding: 15px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    border: hidden;
+    border-radius: 25px;
+    text-align: center;
+    width: 200px;
+
+}
+
+body{
+	background: #ECDFED;
+}
+
+.btn-group.btn-group-justified{
+
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.caregiversName, .childsName, .todaysDate, .activity, .notesForTheDay, .activityDuration{
+	font-family: Josefin Sans;
+	font-size: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+
+}
+
+
