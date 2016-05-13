@@ -1,0 +1,310 @@
+	<!-- 
+		Hi Valentine!  I added feedback to your final so far in HTML comments like this one.
+
+		This is a good start so far.  I would like to see the page a bit more fleshed out.
+		Also, I would encourage you to properly indent your HTML, so that child tags are indented inside 
+		their parent tags.  It makes the HTML a whole lot easier to read.  For example:
+
+		<html>
+			<head>
+				<link rel="stylesheet" href="style.css">
+			</head>
+
+			<body>
+				<header>
+					<h1>Hello!</h1>
+				</header>
+
+				<main>
+					<p>Something goes here.</p>
+				</main>
+			</body>
+		</html>
+
+		More comments below!
+	-->
+
+	<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><!--bootstrap link-->
+			<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Google fonts link Josefin Sans-->
+			<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"><!--font awesome link-->
+
+			<link rel="stylesheet" type="text/css" href="css/style.css"><!--This is the forms stylesheet -->
+
+		</head>
+
+		<body>
+			<div class="container">
+
+			<header>
+				<!-- 
+					You do not really need the spaces around the equal sign.  It should not hurt anything,
+					but usually there are no spaces.
+				-->
+				<img id="logo" src="images/Logoscopic.jpg" >
+				<h1 id="mainHeader">
+					kinder
+					<span class="mainHeaderSpan">Log</span>
+				</h1>
+
+				<!-- This is a nav bar from bootstrap -->
+
+				<!-- This is my first row -->
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+
+				  	<!-- This is my brand name (logo) and my hamburger menu -->
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">What did you do today?</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+
+				      	<!-- This is my active link -->
+				        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+				        <li><a href="#">Link</a></li>
+
+				        <!-- This is my dropdown menu -->
+				        <li class="dropdown">
+
+				        	<!-- This is the main item that you click on -->
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+
+				          <!-- This is my drop-down sub menu -->
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">One more separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+
+				      <!-- This is my searchbar -->
+				      <form class="navbar-form navbar-left" role="search">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="Search">
+				        </div>
+				        <button type="submit" class="btn btn-default">Submit</button>
+				      </form>
+
+				      <!-- These are more links -->
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">Link</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</header>
+
+
+			
+		<main>
+				<!--
+					I see that this <section> tag has  "row" class from Bootstrap.  Are you also planning to 
+					add col- classes to the forms inside the section?
+
+					Take a look at the "Grid Options" section here:
+					http://getbootstrap.com/css/
+
+					Also, I noticed that each form field/section is in its own <form> tag.  If this entire
+					page is one whole form, all of the fields should be inside a single <form> tag.  The form
+					can contain <section> tags inside of it - for example to visually separate the different
+					parts of the form - but all of these fields, including the submit button, needs to be in a single
+					<form> tag.  For example:
+
+					<form id="myForm">
+						<section id="caregiversName">
+							<label for="caregiversName"> Caregiver Name</label>
+							<input type="text" name="caregiversName" value="caregiversName">
+						</section>
+
+						<section id="childsName">
+							<label for="childsName">Child's Name</label>
+							<input type="Text" name="childsName" value="childsName">
+						</section>
+
+						<section id="actions">
+							<button id="backButton"><</button>
+							<button id="submitLog">Submit Log</button>
+							<button id="nextButton">></button>
+						</section>
+					</form>
+				-->
+				<!-- This is my second row -->
+
+				<!-- This is Column 1 of Row 2 -->
+			<div class="col-md-1">
+
+				<!-- This is my child's name navigation -->
+			<section id="childsNameNav">
+				<ul class="nav nav-pills nav-stacked">
+				  <li role="presentation" class="active"><a href="#">Child's Name</a></li>
+				  <li role="presentation"><a href="#">Child's Name</a></li>
+				  <li role="presentation"><a href="#">Childs Name</a></li>
+				</ul>
+			</section>
+			</div>
+
+
+			<form>
+				<!-- This is Column 2 of Row 2 -->
+				<div class="col-md-1">
+				<section class=" topSection row fluidSpanSection">
+				<section id = "caregiversName">
+					<label for = "caregiversName"> Caregiver Name</label>
+					<input type = "text" name = "caregiversName" value = "caregiversName">
+				</section>
+			</div>
+				
+				<!-- This is Column 3 of Row 2 -->
+			<div class="col-md-1">
+				<section id = "todaysDate">
+					<label for = "todaysDate">Today's Date</label>
+					<input type = "date" name = "todaysDate" value = "todaysDate"> 
+				<!--
+					I'm sure this is a typo, but this end </h2> tag should be an end </form> tag.
+				-->	
+				</section>
+			</div>
+					
+				<!-- <section class = "childsName">
+				<section id = "childsName">
+					<label for = "childsName">Child's Name</label>
+					<input type = "Text" name = "childsName" value = "childsName">
+					
+				</section>
+				</section> -->
+
+				<!-- This is Column 4 of Row 2 -->
+			<div class="col-md-2">
+				<section class = "timeSection">	
+				<section id = "activityTime"> <!-- Start time and end time of the activity -->
+					<label for= "activityTime">Activity Time</label>
+					<input type = "time" "timeForm" "col-xs-12 col-md-8"> 
+				</section>
+				</section>
+			</div>
+
+				<!-- This is Column 5 of Row 2 -->
+			<div class="col-md-2">
+				<section class ="activitySection">
+				<section id= "activity"> <!-- ask about how to consolidate this section -->
+					<label for ="activity">Select an Activity</label>
+					<input type ="text" name ="activity" value ="activity" >
+				</div>
+					<!--
+						Make sure to give this <select> form field a name (just like you do with <input>).
+
+						Also, there needs to be text between the start <option> tag and the end <option> tag.  This 
+						text is what appears in the drop down menu itself.  For example:
+
+						<option value="Arrival">Arrival</option>
+					-->
+
+					<!-- This is Column 6 of Row 2 -->
+			<div class="col-md-1">
+					<select type= "select" name= "select" value= "select">
+						<option value = "Arrival">Arrival</option>
+						<option value = "Meal">Meal</option>
+						<option value = "Nap">Nap</option>
+						<option value = "Playdate">Playdate</option>
+						<option value = "Appointment">Appointment</option>
+						<option value = "Other">Other</option>
+					</select>
+				</section>
+				</section>
+			</div>
+
+				<!-- This is Column 7 of Row 2 -->
+			<div class="container col-md-offset-4">
+				<section class="durationSection">
+				<section id="activityDuration"> <!-- Total time that the activity took -->
+				<div class="activityDuration"
+					<label for="activityDuration">Duration</label>
+				</div>
+					<time datetime="PTDHMS" name="totalTime" value="totalTime">
+				</section>
+				</section>
+			</div>
+
+				<!-- This is my third Row -->
+				<section class = "notesSection row">
+				<form id = "notesForTheDay">
+					<label for = "notes">NOTES</label>
+					<input type = "text" name = "notes" value= "notes">
+				</section>
+				</section>
+
+
+
+			</section>
+		</main>
+
+		<!--This is my forth row -->
+		<footer class= "fluidSpan row">
+			<button id = "backButton"><</button>
+			<button id = "submitLog">Submit Log</button>
+			<button id = "nextButton">></button>
+		</footer>
+
+			</div> <!-- /.container -->
+
+			<script src='https://code.jquery.com/jquery-2.2.3.min.js'></script> 
+
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			
+		</body>
+
+
+		<!-- put childs name into its own section
+		time should be in its own section
+		activity should be in its own section
+		these three sections should float side by side
+		notes for the day should be its own section on the bottom right of the page
+		there should be a border around each section
+		The sections for time, activity and duration are going to be tables
+ -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</html>
