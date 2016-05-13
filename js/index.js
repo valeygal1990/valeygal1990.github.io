@@ -30,7 +30,7 @@ var currentIndex = 0;
  	event.preventDefault();
  	$('this').slideDown();
  	$('this').hide();
- 	$('this').show[]
+ 	$('this').show['']
 
  	// Next button: When you cick the skip button, display the next form in the array.
 
@@ -47,7 +47,7 @@ $('.btn').click(function(){
 		currentIndex = 0;
 	}
 
-		$('#image-to-vote-on').attr('src', forms[currentIndex]);
+		$('#image-to-vote-on').attr(forms[currentIndex]);
 		}
 	}
 
@@ -69,7 +69,7 @@ $('.btn').click(function(){
 			currentIndex = forms.lenth - 1;
 		}
 
-			$('#image-to-vote-on').attr('src', forms[currentIndex]);
+			$('#image-to-vote-on').attr(forms[currentIndex]);
 		}
 	}
 
