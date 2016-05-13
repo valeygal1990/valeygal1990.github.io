@@ -32,4 +32,45 @@ var currentIndex = 0;
  	$('this').hide();
  	$('this').show[]
 
+ 	// Next button: When you cick the skip button, display the next form in the array.
+
+$('.btn').click(function(){
+	var action = $(this).val();
+
+	if (action == "Skip") {
+		if (currentIndex < (forms.length - 1) ) {
+		//Go to the next image.
+
+		currentIndex = currentIndex + 1;
+
+	} else {
+		currentIndex = 0;
+	}
+
+		$('#image-to-vote-on').attr('src', forms[currentIndex]);
+		}
+	}
+
+	// Back buttton;  When you click the back button, display the previous form in the array.
+
+	// $('.btn').click(function(){
+	// 	var action = $(this).val();
+
+		if (action == "Back"){
+
+			//make sure currentIndex is not on the first image
+
+			if currentIndex > 0) {
+			// go to previous image.
+
+			currentIndex = currentIndex - 1;
+
+		} else {
+			currentIndex = forms.lenth - 1;
+		}
+
+			$('#image-to-vote-on').attr('src', forms[currentIndex]);
+		}
+	}
+
 });
