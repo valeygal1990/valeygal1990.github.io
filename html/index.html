@@ -33,7 +33,7 @@
 			<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Google fonts link Josefin Sans-->
 			<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"><!--font awesome link-->
 
-			<link rel="stylesheet" type="text/css" href="style.css"><!--This is the forms stylesheet -->
+			<link rel="stylesheet" type="text/css" href="css/style.css"><!--This is the forms stylesheet -->
 
 		</head>
 
@@ -45,6 +45,7 @@
 					You do not really need the spaces around the equal sign.  It should not hurt anything,
 					but usually there are no spaces.
 				-->
+				<img id="logo" src="images/Logoscopic.jpg" >
 				<h1 id="mainHeader">
 					kinder
 					<span class="mainHeaderSpan">Log</span>
@@ -242,14 +243,13 @@
 			</div>
 
 				<!-- This is Column 7 of Row 2 -->
-			<div class="col-md-1">
-				<section class = " durationSection">
-				<section id = "activityDuration"> <!-- Total time that the activity took -->
-					<label for = "activityDuration">Duration</label>
-					<input type = "time" name = "totalTime" value = "totalTime">
-				<!-- <section "durationSection col-xs-12 col-md-8">
-					DURATION section
-				</section> -->
+			<div class="container col-md-offset-4">
+				<section class="durationSection">
+				<section id="activityDuration"> <!-- Total time that the activity took -->
+				<div class="activityDuration"
+					<label for="activityDuration">Duration</label>
+				</div>
+					<time datetime="PTDHMS" name="totalTime" value="totalTime">
 				</section>
 				</section>
 			</div>
@@ -275,6 +275,11 @@
 		</footer>
 
 			</div> <!-- /.container -->
+
+			<script src='https://code.jquery.com/jquery-2.2.3.min.js'></script> 
+
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			
 		</body>
 
 
