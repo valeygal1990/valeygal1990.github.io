@@ -8,26 +8,28 @@ $(document).ready(function() {
 //date form is hidden
 //child's name form is shown
 //user fills in child's name
-//
+var forms = [
+	'#caregiverForm', 
+	'#childsNameForm', 
+	'#todaysDate', 
+	'#activity', 
+	'#notesForTheDay', 
+	'#activityDuration'
+];
 
-$('form').submit(saveValue);
+var currentIndex = 0;
 
-function saveValue() {
-	var childsName=$('#childsNameForm').val();
-
-	if childsName ==''{
-		event.preventDefault();
-		$('#childsNameForm').hide();
-    	$('#caregiverform').show();
-    	console.log ('#childsNameForm');
-    	console.log ('#childsNameForm');
-	}
-}
 
 //User clicks on the next button
 //value of the input field is saved in a variable to be inserted later into the final form
 
 
-	
+	$('#mainForms').click(displayNextForm);
+
+ function displayImageSelections(){
+ 	event.preventDefault();
+ 	$('this').slideDown();
+ 	$('this').hide();
+ 	$('this').show[]
 
 });
