@@ -26,17 +26,17 @@ var currentIndex = 0;
 
 	$('#mainForms').click(displayNextForm);
 
- function displayImageSelections(){
+ function displayNextForm(){
  	event.preventDefault();
- 	$('this').hide();
- 	$('this').show['']
+ 	$('this').hide[currentIndex];
+ 	$('this').show[]
 
  	// Next button: When you cick the name button, display the next form in the array.
 
 $('.btn').click(function(){
 	var action = $(this).val();
 
-	if (action == "next") {
+	if (action == "#nextbtn") {
 		if (currentIndex < (forms.length - 1) ) {
 		
 		currentIndex = currentIndex + 1;
@@ -54,7 +54,7 @@ $('.btn').click(function(){
 	// $('.btn').click(function(){
 	// 	var action = $(this).val();
 
-		if (action == "Back"){	
+		if (action == "#backbtn"){	
 
 			if currentIndex > 0) {
 			
