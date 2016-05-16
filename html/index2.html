@@ -3,7 +3,9 @@
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><!--bootstrap link-->
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Google fonts link Josefin Sans-->
+		<script src="https://use.fontawesome.com/79c7b9a523.js"></script><!--font awesome-->
 		<link rel="stylesheet" type="text/css" href="../css/styles.css"><!--my stylesheet-->
+
 	</head>
 
 		<body>
@@ -17,54 +19,77 @@
 			</header>
 
 			<!--This is my second row-->
+
+			<!--These are my tab buttons-->
+			<div class="container col-md-offset-4 row">
+			<ul class="tab list">
+			<li class="active"><a class="tab-control" href="#tab1">Caregiver's Name</a></li>
+			<li><a class="tab-control" href="#tab2">Child's Name</a></li>
+			<li><a class="tab-control" href="#tab2">Child's Name</a></li>
+			<li><a class="tab-control" href="#tab2">Activity</a></li>
+			<li><a class="tab-control" href="#tab2">Duration</a></li>
+			<li><a class="tab-control" href="#tab2">Today's Notes</a></li>
+			</ul>
+			</div>
+			
 			
 			<form id="mainForms">
+				<div class="container col-md-offset-4 row">
+				
+
 			<!--This is my first form-->
-			<div class="container col-md-offset-4 row">
-				<section id = "todaysDate">
-				<div class="todaysDate">
-					<label for = "todaysDate">What's the date today?</label>
-					<input type = "date" name = "todaysDate" value = "todaysDate">
-				</div><!--.todaysDate-->
-			</div><!--.container-->
+				<!-- <li>
+					<button class="accordion-control">Date</button>
+					<div class="accordion-panel">
+						<section id = "todaysDate">
+						<div class="todaysDate">
+							<label for = "todaysDate">What's the date today?</label>
+							<input type = "date" name = "todaysDate" value = "todaysDate"> -->
+						<!-- </div> --><!--.todaysDate-->
+					<!-- </div> --><!--.accordion-panel-->
+				<!-- </li> -->
 
 			<!--This is my second form-->
-			<div class="container col-md-offset-4 row">
-				<section id="caregiverForm">
-				<div class="caregiversName">
-					<label for="caregiversName">
-						Please enter your name
-					</label>
-				</div>
+			
+				<div class="tab-panel active" id="tab-1">
+					<section id="caregiversForm">
+					<div class="caregiversName">
+						<label for="caregiversName">
+							Please enter your name
+						</label>
+					</div>
 
-				<div class="inputBox">
-					<input type="text" name="caregiversName" value="Caregiver's Name">
-				</div><!--.inputBox-->
-				</section><!--caregiversName-->
-			</div><!--.container-->
+					<div class="inputBox">
+						<input type="text" name="caregiversName" value="Caregiver's Name">
+					</div><!--.inputBox-->
+					</section><!--caregiversForm-->
+				</div><!--.tab-panel-->
+			
 
 			<!--This is my third form-->
-			<div class="container col-md-offset-4 row">
-				<section id="childsNameForm">
-				<div class="childsName">
-					<label for = "childsName"> 
-						Please enter the child's name
-					</label>
-				</div>
-					<input type = "text" name="childsName" value="Child's Name">
+			
+				<div class="tab-panel" id="tab-2">
+					<section id="childsNameForm">
+					<div class="childsName">
+						<label for = "childsName"> 
+							Please enter the child's name
+						</label>
+					</div>
+						<input type = "text" name="childsName" value="Child's Name">
 
-				</section><!--childsName-->
-			</div><!--container-->
+					</section><!--childsName-->
+				</div><!--.tab-panel-->
+			
 
 			<!--This is my forth form-->
-			<div class="container col-md-offset-4 row">
-				<!-- <section class ="activitySection"> -->
-				<section id= "activity">
-				<div class="activity">	
-					<label for ="activity">Select an Activity</label>
-				</div><!--activity-->
-				<input type ="text" name ="activity" value ="activity"> 
-					
+					<div class="tab-panel" id="tab-3">
+					<!-- <section class ="activitySection"> -->
+					<section id= "activity">
+					<div class="activity">	
+						<label for ="activity">Select an Activity</label>
+					</div><!--activity-->
+					<input type ="text" name ="activity" value ="activity"> 
+						
 			
 					<select type= "select" name= "select" value= "select">
 						<option value = "Arrival">Arrival</option>
@@ -74,36 +99,50 @@
 						<option value = "Appointment">Appointment</option>
 						<option value = "Other">Other</option>
 					</select>
-				</section><!--activity-->
+					</section><!--activity-->
 
-			</div><!--container-->
-			<!--these forms should work together-->
+				</div><!--.tab-panel-->
+		
+				<!--these forms should work together-->
 
 			<!--This is my fifth  form-->
-			<div class="container col-md-offset-4">
-				<section class="durationSection">
-				<section id="activityDuration"> <!-- Total time that the activity took -->
-				<div class="activityDuration">
-					<label for="activityDuration">Duration</label>
-				</div>
-					<time datetime="PTDHMS" name="totalTime" value="totalTime">
-				</section>
-				</section>
-			</div>
-
-			<!--This is my sixth form-->
-			<section class = "container col-md-offset-4 row">
-				<section id = "notesForTheDay">
-				<div class="notesForTheDay">
-					<label for = "notes">NOTES</label>
-				</div><!--notesForTheDay-->
-				<input type = "text" name = "notes" value= "notes">
-
-					
-				</section><!--notesForTheDay-->
-				</section><!--container-->
-
+				<div class="tab-panel" id="tab-4">
+					<section class="durationSection">
+					<section id="activityDuration"> <!-- Total time that the activity took -->
+					<div class="activityDuration">
+						<label for="activityDuration">Duration</label>
+					</div>
+						<time datetime="PTDHMS" name="totalTime" value="totalTime">
+					</section>
+					</section>
+				</div><!--.tab-panel-->
+			
 			</form>
+
+			<!--This is the printed notepad-->
+				<div class="tab-panel" id="tab-5">
+				<form id="notepad" class="clearfix">
+						<h1 class="title">Hi!This is what we did today</h1>
+						
+						<ul>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+						</ul>
+						<div class="clearAllButton">
+							<input type="button" value="Clear All" id="clear-all">
+					</div>
+				</div><!--.tab-panel-->
+				</form>
+		
 
 			<!--These are my back and next buttons--> 
 					<div class="btn-group btn-group-justified" role="group" aria-label="...">
@@ -124,7 +163,15 @@
 			<script src='https://code.jquery.com/jquery-2.2.3.min.js'></script> 
 
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-			<script src="../js/index.js"></script>
+			<script src="../js/index3.js"></script>dsa
+
+			<footer class="footerRow row col-md-12">
+				<div class="footerIcons"
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				</div>
+			</footer>
 
 		</body>
 </html>

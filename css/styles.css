@@ -31,7 +31,7 @@ h1{
 	background:#F5B8F4;
 	color: purple;
 	font-family: Josefin Sans;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 img.logo{
@@ -75,8 +75,10 @@ input[type=text]{
 
 }
 
-body{
+body{ /*need to fix this*/
 	background: #ECDFED;
+	background-image: url(../images/crayon-background.jpeg);
+	overflow:scroll;
 }
 
 .btn-group.btn-group-justified{
@@ -92,6 +94,51 @@ body{
 	padding-bottom: 25px;
 	text-align: center;
 
+}
+
+.tab-control{
+	display: inline;
+	border-radius: 25px;
+	border: hidden;
+	text-align: center;
+	width: 100px;
+	height: 25%;
+	background:#F5B8F4;
+}
+
+.active.tab-control{
+	display: inline-block;
+	border-radius: 25px;
+	border: hidden;
+	text-align: center;
+	width: 100px;
+	height: 25%;
+	background:purple;
+}
+
+.tab-panel{
+	display: none;
+}
+.tab-panel.active{
+	display: block;
+}
+
+
+li{
+	text-decoration: none;
+}
+
+#notepad{
+	text-align:center;
+}
+
+footer{
+	background: #762B80;
+	height:75%;
+}
+
+.clearAllButton{
+	text-align: center;
 }
 
 

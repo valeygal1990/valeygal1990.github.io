@@ -1,4 +1,3 @@
-$(document).ready(function() {
 
 	//I think I will save all the forms in an array..
 
