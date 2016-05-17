@@ -9,10 +9,10 @@ body {
 }
 
 .transbox {
-    margin: 10px;
+   /* margin: 10px;
     border: hidden;
     opacity: 0.8;
-    filter: alpha(opacity=60);
+    filter: alpha(opacity=60);*/
 }
 
 #exTab2 h3 {
@@ -85,7 +85,8 @@ img.logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 25px;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 .page-header{
@@ -198,8 +199,9 @@ li{
 
 footer.row{
   background: #762B80;
-  height:100px;
+  height:50px;
   display: inline-block;
+  margin: 25px;
 }
 
 footer p{
@@ -216,7 +218,7 @@ footer p{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:50%;
+  width:20%;
   background:#F5B8F4;
   color: purple;
   font-family: Josefin Sans;
@@ -229,6 +231,22 @@ footer p{
 color: purple; 
 }
 
+.notepad{
+  background: white;
+}
+
 .dailyNotes{
   background: 
+}
+
+.fakeParagraph{
+  font-size: 2em;
+  font-family: Josephine Sans;
+  color: black;
+}
+
+.nav.nav-tabs{
+  font-size: 2em;
+  color: purple;
+  font-family: Josefin Sans;
 }
