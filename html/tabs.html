@@ -37,7 +37,7 @@
 
 	</div>
 	
-	<form>
+	<form id="mainForm">
 		<div class="transbox container">
 
 		<div class="tab-content clearfix">
@@ -51,8 +51,9 @@
 					</div>
 
 					<div class="inputBox">
-						<input type="text" name="caregiversName" value="Caregiver's Name">
+						<input type="text" name="caregiversName" value="Caregiver's Name" id="caregiversName">
 					</div><!--.inputBox-->
+
 				</section><!--caregiversForm-->
 			</h3>
 		</div>
@@ -63,7 +64,7 @@
 						<label for = "childsName"> Please enter the child's name
 						</label>
 					</div>
-					<input type = "text" name="childsName" value="Child's Name">
+					<input type = "text" name="childsName" value="Child's Name" id="childsName">
 
 				</section><!--childsName-->
 			</h3>
@@ -74,7 +75,7 @@
 					 <div class="activity">	
 						<label for ="activity">Select an Activity</label>
 					</div> <!--activity -->
-					 <input type ="text" name ="activity" value ="activity">  
+					 <input type ="text" name ="activity" value ="activity" id="inputField">  
 						
 			
 					<select type= "select" name= "select" value= "select">
@@ -99,19 +100,15 @@
 				</section>
 		</div>
 		</div><!--transbox-->
+		<button id="submit-btn" type="button" class="btn btn-primary btn-lg">Submit</button>
+		<button id="startover-btn" type="button" class="btn btn-default btn-lg">Start over</button>
 	</form>
 	
 				<form id="notepad" class="clearfix row">
 						<h1 class="notepadTitle">Hi!This is what 
-							<div class="childsName"><input type = "text" name="childsName" value="Child's Name"></div> did today...</h1>
+							<div class="childsName"><input type = "text" name="childsName" value="Child's Name" id="inputField"></div> did today...</h1>
 						
-						<ul>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
+						<ul class="dailyNotes">
 						
 						</ul>
 						<div class="clearAllButton">

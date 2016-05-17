@@ -208,7 +208,7 @@ footer p{
   font-weight: 300;
   text-align: center;
   color: #4F184E;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .clearAllButton input{
@@ -226,9 +226,9 @@ footer p{
 }
 
 .notepadTitle{
-color: #F5B8F4; 
+color: purple; 
 }
 
-
-
-
+.dailyNotes{
+  background: 
+}
