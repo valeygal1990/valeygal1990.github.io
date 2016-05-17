@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	});
 //below is the activity duration slider
-	var $range = $('#activityDuration');
+	// var range = $('#activityDuration');
 
 	$('#activityDuration').slider({
 		range : true,
@@ -18,12 +18,12 @@ $(document).ready(function() {
 		max:24,
 		values:[''],
 		slide:function(event,ui){
-			$activityDuration.val('$' + ui.values[0]) + '- $' + ui.values[1]);
+			$('#activityDuration').val('$' + ui.values[0]) + '- $' + ui.values[1];
 		}
 
 	});
-	$activityDuration
-		.val('$' + $range.slider('values', 0)
-		+ '-$') + $range.slider('values', 1));
+	$('#activityDuration')
+		.val('$' + $('#activityDuration').slider('values', 0)
+		+ '-$') + $('#activityDuration').slider('values', 1);
 });
 

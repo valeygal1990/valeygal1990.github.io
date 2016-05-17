@@ -1,0 +1,208 @@
+body {
+  padding : 10px ;
+  
+}
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+  font-family: Josefin Sans;
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+
+/*old css*/
+
+h1{
+  font-family: Josefin Sans;
+  font-weight: 900;
+  text-align: center;
+  color: #4F184E;
+  font-size: 3em;
+
+}
+
+.homeParagraph{
+  font-family: Josefin Sans;
+  font-weight: 300;
+  text-align: center;
+  color: #424242;
+  font-size: .5em;
+}
+
+.getStartedParagraph{
+  font-family: Josefin Sans;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+.getStartedBtn a{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  background:#F5B8F4;
+  color: purple;
+  font-family: Josefin Sans;
+  font-size: 1em;
+}
+
+img.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+.page-header{
+  text-align: center;
+  color: purple;
+  font-family: Josefin Sans;
+  background:#ECDFED;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#caregiversForm, #childsNameForm, #todaysDate, #activity, #notesForTheDay, #activityDuration{
+  background-color:#986D9C; 
+  width: 40%;
+  border-width:5px; 
+  border-style:hidden;
+  border-radius: 25px;
+  padding:80px;
+  margin:10px;
+  display: block;
+}
+
+input[type=text]{ 
+  background-color: #F5B8F4;
+    color: black;
+    padding: 15px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    border: hidden;
+    border-radius: 25px;
+    text-align: center;
+    width: 250px;
+
+}
+
+body{ /*need to fix this*/
+  background: #ECDFED;
+  background-image: url(../images/crayon-background.jpeg);
+  background-size: cover;
+  overflow:scroll;
+}
+
+.btn-group.btn-group-justified{
+
+  margin: 0 auto;
+  padding-top: 20px;
+  width:50%;
+}
+
+.caregiversName, .childsName, .todaysDate, .activity, .notesForTheDay, .activityDuration{
+  font-family: Josefin Sans;
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
+.tab-control{
+  display: inline;
+  border-radius: 25px;
+  border: hidden;
+  text-align: center;
+  width: 100px;
+  height: 25%;
+  background:#F5B8F4;
+}
+
+.active.tab-control{
+  display: inline-block;
+  border-radius: 25px;
+  border: hidden;
+  text-align: center;
+  width: 100px;
+  height: 25%;
+  background:purple;
+}
+
+.tab-panel{
+  display: none;
+}
+.tab-panel.active{
+  display: block;
+}
+
+
+li{
+  text-decoration: none;
+}
+
+#notepad{
+  text-align:center;
+}
+
+#notepad ul{
+
+}
+
+footer{
+  background: #762B80;
+  height:75%;
+}
+
+.clearAllButton input{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  background:#F5B8F4;
+  color: purple;
+  font-family: Josefin Sans;
+  font-size: 2em;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.notepadTitle{
+color: #F5B8F4; 
+}
+
+
+
+

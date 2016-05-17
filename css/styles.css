@@ -78,6 +78,7 @@ input[type=text]{
 body{ /*need to fix this*/
 	background: #ECDFED;
 	background-image: url(../images/crayon-background.jpeg);
+	background-size: cover;
 	overflow:scroll;
 }
 

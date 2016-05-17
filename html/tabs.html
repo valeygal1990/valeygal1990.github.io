@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><!--bootstrap link-->
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Google fonts link Josefin Sans-->
+	<link rel="stylesheet" type="text/css" href="../css/tabs.css"><!--my stylesheet-->
+</head>
+<body>
+
+	<div id="exTab3" class="container">	
+		<ul  class="nav nav-pills">
+			<li class="active">
+        		<a  href="#1b" data-toggle="tab">Caregiver's Name</a>
+			</li>
+			<li><a href="#2b" data-toggle="tab">Child's Name</a>
+			</li>
+			<li><a href="#3b" data-toggle="tab">Activity</a>
+			</li>
+			<li><a href="#4b" data-toggle="tab">Duration</a>
+			</li>
+		</ul>
+
+	<form>
+
+		<div class="tab-content clearfix">
+			<div class="tab-pane active" id="1b">
+          	<h3>
+          		<section id="caregiversForm">
+					<div class="caregiversName">
+						<label for="caregiversName">
+							Please enter your name
+						</label>
+					</div>
+
+					<div class="inputBox">
+						<input type="text" name="caregiversName" value="Caregiver's Name">
+					</div><!--.inputBox-->
+				</section><!--caregiversForm-->
+			</h3>
+		</div>
+		<div class="tab-pane" id="2b">
+        	<h3>
+	          	<section id="childsNameForm">
+					<div class="childsName">
+						<label for = "childsName"> Please enter the child's name
+						</label>
+					</div>
+					<input type = "text" name="childsName" value="Child's Name">
+
+				</section><!--childsName-->
+			</h3>
+		</div>
+        <div class="tab-pane" id="3b">
+        	<h3>
+        		<section id= "activity">
+					 <div class="activity">	
+						<label for ="activity">Select an Activity</label>
+					</div> <!--activity -->
+					 <input type ="text" name ="activity" value ="activity">  
+						
+			
+					<select type= "select" name= "select" value= "select">
+						<option value = "Arrival">Arrival</option>
+						<option value = "Meal">Meal</option>
+						<option value = "Nap">Nap</option>
+						<option value = "Playdate">Playdate</option>
+						<option value = "Appointment">Appointment</option>
+						<option value = "Other">Other</option>
+					</select>
+				</section><!--activity section-->
+			</h3>
+		</div>
+    	<div class="tab-pane" id="4b">
+	    	<h3>
+		      	<section class="durationSection">
+					<section id="activityDuration"> <!-- Total time that the activity took -->
+						<div class="activityDuration">
+							<label for="activityDuration">Duration</label>
+						</div>
+						<time datetime="PTDHMS" name="totalTime" value="totalTime">
+					</section>
+				</section>
+			</h3>
+		</div>
+	</div>
+	</form>
+
+
+	<div class="tab-pane" id="tab-5">
+				<form id="notepad" class="clearfix">
+						<h1 class="notepadTitle">Hi!This is what we did today...</h1>
+						
+						<ul>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+							<li><input type="text" class="notepad-line"></li>
+						</ul>
+						<div class="clearAllButton">
+							<input type="button" value="Clear All" id="clear-all">
+					</div>
+					</form>
+				</div><!--.tab-panel-->
+</body>
+	<script src='https://code.jquery.com/jquery-2.2.3.min.js'></script> 
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="../js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script><!--js ui-->
+	<script src="https://use.fontawesome.com/79c7b9a523.js"></script><!--font awesome-->
+	<script src="../js/index3.js"></script>
+</html>
+
