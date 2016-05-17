@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+$('.nav.nav-tabs a').click(function () {
+  e.preventDefault()
+  $(this).tab('show')
+})
 	
 $('#myTabs a').click(function() {
   event.preventDefault();

@@ -5,8 +5,14 @@ body {
 
 #exTab1 .tab-content {
   color : white;
-  background-color: #428bca;
   padding : 5px 15px;
+}
+
+.transbox {
+    margin: 10px;
+    border: hidden;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
 }
 
 #exTab2 h3 {
@@ -38,8 +44,6 @@ body {
   padding : 5px 15px;
 }
 
-
-/*old css*/
 
 h1{
   font-family: Josefin Sans;
@@ -91,6 +95,7 @@ img.logo{
   background:#ECDFED;
   height: 100px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 #caregiversForm, #childsNameForm, #todaysDate, #activity, #notesForTheDay, #activityDuration{
@@ -120,16 +125,26 @@ input[type=text]{
 
 body{ /*need to fix this*/
   background: #ECDFED;
-  background-image: url(../images/crayon-background.jpeg);
+  /*background-image: url(../images/crayon-background.jpeg);*/
   background-size: cover;
   overflow:scroll;
+  opacity:1.5;
+
 }
 
-.btn-group.btn-group-justified{
+#nextbtn #backbtn{
 
-  margin: 0 auto;
-  padding-top: 20px;
-  width:50%;
+  margin: 0 0 auto;
+  padding: 100px;
+  text-align: center;
+  display: block;
+  /*width:50%;*/
+  background:#F5B8F4;
+  color: purple;
+  font-family: Josefin Sans;
+  font-size: 2em;
+  border-radius: 25px;
+  font-weight: 600;
 }
 
 .caregiversName, .childsName, .todaysDate, .activity, .notesForTheDay, .activityDuration{
@@ -169,20 +184,31 @@ body{ /*need to fix this*/
 
 
 li{
-  text-decoration: none;
+  list-style: none;
 }
 
 #notepad{
   text-align:center;
 }
 
-#notepad ul{
+.notepad-line{
+  width:500px;
 
 }
 
-footer{
+footer.row{
   background: #762B80;
-  height:75%;
+  height:100px;
+  display: inline-block;
+}
+
+footer p{
+
+  font-family: Josefin Sans;
+  font-weight: 300;
+  text-align: center;
+  color: #4F184E;
+  font-size: 3em;
 }
 
 .clearAllButton input{

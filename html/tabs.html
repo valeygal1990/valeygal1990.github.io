@@ -3,11 +3,26 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><!--bootstrap link-->
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Google fonts link Josefin Sans-->
+	<link rel="stylesheet" href="path/to/font-awesome/../css/font-awesome.min.css"><!--font awesome-->
 	<link rel="stylesheet" type="text/css" href="../css/tabs.css"><!--my stylesheet-->
 </head>
 <body>
 
-	<div id="exTab3" class="container">	
+	<!--This is my first row-->
+			<ul class="nav nav-tabs">
+			  <li role="presentation" class="active"><a href="home.html">Home</a></li>
+			  <li role="presentation"><a href="tabs.html">Today's Log</a></li>
+			</ul>
+			<header class="headerRow row">
+				<img class="logo" src="../images/LogoScopic.jpg" alt="kinderLogo" height="200" width="200">
+				<div class="page-header">
+			  		<h1>The easy way <small>to log their day!</small></h1>
+				</div><!--.page-header-->
+			</header>
+
+	<!-- This is my second row -->
+
+	<div id="exTab3" class="container row">	
 		<ul  class="nav nav-pills">
 			<li class="active">
         		<a  href="#1b" data-toggle="tab">Caregiver's Name</a>
@@ -20,10 +35,13 @@
 			</li>
 		</ul>
 
+	</div>
+	
 	<form>
+		<div class="transbox container">
 
 		<div class="tab-content clearfix">
-			<div class="tab-pane active" id="1b">
+			<div class="tab-pane fade in active" id="1b">
           	<h3>
           		<section id="caregiversForm">
 					<div class="caregiversName">
@@ -38,7 +56,7 @@
 				</section><!--caregiversForm-->
 			</h3>
 		</div>
-		<div class="tab-pane" id="2b">
+		<div class="tab-pane fade" id="2b">
         	<h3>
 	          	<section id="childsNameForm">
 					<div class="childsName">
@@ -50,7 +68,7 @@
 				</section><!--childsName-->
 			</h3>
 		</div>
-        <div class="tab-pane" id="3b">
+        <div class="tab-pane fade" id="3b">
         	<h3>
         		<section id= "activity">
 					 <div class="activity">	
@@ -68,10 +86,9 @@
 						<option value = "Other">Other</option>
 					</select>
 				</section><!--activity section-->
-			</h3>
 		</div>
-    	<div class="tab-pane" id="4b">
-	    	<h3>
+    	<div class="tab-pane fade" id="4b">
+	    	
 		      	<section class="durationSection">
 					<section id="activityDuration"> <!-- Total time that the activity took -->
 						<div class="activityDuration">
@@ -80,15 +97,13 @@
 						<time datetime="PTDHMS" name="totalTime" value="totalTime">
 					</section>
 				</section>
-			</h3>
 		</div>
-	</div>
+		</div><!--transbox-->
 	</form>
-
-
-	<div class="tab-pane" id="tab-5">
-				<form id="notepad" class="clearfix">
-						<h1 class="notepadTitle">Hi!This is what we did today...</h1>
+	
+				<form id="notepad" class="clearfix row">
+						<h1 class="notepadTitle">Hi!This is what 
+							<div class="childsName"><input type = "text" name="childsName" value="Child's Name"></div> did today...</h1>
 						
 						<ul>
 							<li><input type="text" class="notepad-line"></li>
@@ -97,23 +112,32 @@
 							<li><input type="text" class="notepad-line"></li>
 							<li><input type="text" class="notepad-line"></li>
 							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
-							<li><input type="text" class="notepad-line"></li>
+						
 						</ul>
 						<div class="clearAllButton">
 							<input type="button" value="Clear All" id="clear-all">
 					</div>
 					</form>
-				</div><!--.tab-panel-->
-</body>
+		
+
+
+					<footer class="footerRow row col-md-12">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						
+
+				<p>Valentine Sakwa
+					FEWD 23 Final Project</p>
+			</footer>
+
+
+		</body>
+	</div><!--container-->
 	<script src='https://code.jquery.com/jquery-2.2.3.min.js'></script> 
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="../js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script><!--js ui-->
-	<script src="https://use.fontawesome.com/79c7b9a523.js"></script><!--font awesome-->
 	<script src="../js/index3.js"></script>
 </html>
 
