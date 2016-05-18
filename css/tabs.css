@@ -99,14 +99,22 @@ img.logo{
   padding: 20px;
 }
 
+@media only screen and (max-width: 400px){
+  .page-header{
+    color: red;
+  }
+
+}
+
+
 #caregiversForm, #childsNameForm, #todaysDate, #activity, #notesForTheDay, #activityDuration{
   background-color:#986D9C; 
   width: 40%;
   border-width:5px; 
   border-style:hidden;
   border-radius: 25px;
-  padding:80px;
-  margin:10px;
+  /*padding:80px;
+  margin:10px;*/
   display: block;
 }
 
@@ -126,11 +134,15 @@ input[type=text]{
 
 body{ /*need to fix this*/
   background: #ECDFED;
-  /*background-image: url(../images/crayon-background.jpeg);*/
+  background-image: url(../images/crayon-background.jpeg);
   background-size: cover;
   overflow:scroll;
   opacity:1.5;
 
+}
+
+.container.row{
+  background: rgba(0 0 0 0.3);
 }
 
 #nextbtn #backbtn{
